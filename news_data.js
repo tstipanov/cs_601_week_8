@@ -84,20 +84,20 @@ function findByPhone(targetPhone) {
     return results;
 }
 
-function findEmployeesByLastName(lastName) {
+function findArticlesByAuthor(author) {
     let results = [];
 
-    if (lastName === null) {
+    if (author === null) {
         return results;
     }
 
-    employees.forEach(employee => {
-        if ( employee.name.last.toLowerCase().includes(lastName.toLowerCase())) {
-            results.push(employee);
+    articles.forEach(article => {
+        if (article.name.last.toLowerCase().includes(author.toLowerCase())) {
+            results.push(article);
         }
     });
 
     return results;
 }
 
-export {findByPhone, findEmployeesByLastName};
+export {findByPhone, findArticlesByAuthor};
