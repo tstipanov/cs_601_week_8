@@ -100,4 +100,21 @@ function findArticlesByAuthor(author) {
     return results;
 }
 
-export {findByPhone, findArticlesByAuthor};
+
+function findArticlesByKeyword(keyword) {
+    let results = [];
+
+    if (keyword === null) {
+        return results;
+    }
+
+    articles.forEach(article => {
+        if (article.name.last.toLowerCase().includes(keyword.toLowerCase())) {
+            results.push(article);
+        }
+    });
+
+    return results;
+}
+
+export {findByPhone, findArticlesByAuthor, findArticlesByKeyword};
