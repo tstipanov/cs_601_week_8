@@ -92,7 +92,7 @@ function findArticlesByDate(date) {
         return results;
     }
     articles.forEach(article => {
-        if (article.name.last.toLowerCase().includes(keyword.toLowerCase())) {
+        if (article.released.getFullYear() == date.getFullYear() && article.released.getMonth() == date.getMonth() && article.released.getDate() == date.getDate()) {
             results.push(article);
         }
     });
