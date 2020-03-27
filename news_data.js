@@ -86,8 +86,21 @@ function findArticlesByKeyword(keyword) {
 }
 
 
+function findArticlesByDate(date) {
+    let results = [];
+    if (date === null) {
+
+        return results;
+    }
+    articles.forEach(article => {
+	var articleDate = new Date(article.released);
+        if (articleDate.getFullYear() == date.getFullYear() && articleDate.getMonth() == date.getMonth() && articleDate.getDate() == date.getDate()) {
+            results.push(article);
+        }
+    });
+    return results;
+}
 
 
 
-
-export {findArticlesByAuthor, findArticlesByKeyword};
+export {findArticlesByAuthor, findArticlesByKeyword, findArticlesByDate};
