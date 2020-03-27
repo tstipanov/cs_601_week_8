@@ -75,6 +75,14 @@ function findArticlesByAuthor(author) {
 function findArticlesByKeyword(keyword) {
     let results = [];
     if (keyword === null) {
+	var today = new Date();    
+
+    	if (article.released.getFullYear() == today.getFullYear() && article.released.getMonth() == today.getMonth() && article.released.getDate() == today.getDate()) {
+            results.push(article);
+        }
+	    
+	    
+	    
         return results;
     }
     articles.forEach(article => {
