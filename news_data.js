@@ -101,4 +101,4 @@ function findArticlesByDate(date) {
 
 
 
-export {findArticlesByAuthor, findArticlesByKeyword};
+export {findArticlesByAuthor, findArticlesByKeyword, findArticlesByDate};
