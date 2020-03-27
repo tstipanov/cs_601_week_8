@@ -85,10 +85,13 @@ function findArticlesByKeyword(keyword) {
         return results;
     }
     articles.forEach(article => {
-        if (article.name.last.toLowerCase().includes(keyword.toLowerCase())) {
-            //results.push(article);
-		return results; // temporary
-        }
+
+	article.keywords.forEach(db_keyword => {
+	        if (keyword.toLowerCase() == db_keyword.toLowerCase()) {
+            		results.push(article);
+        	}	
+	})
+
     });
     return results;
 }
