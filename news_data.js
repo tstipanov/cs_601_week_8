@@ -1,7 +1,7 @@
 const articles = [
     	{
 		caption: "Unemployment spikes and Congress moves ahead on $2 trillion in aid",
-		keywords: {"stimulus", "unemployment", "congress", "coronavirus"},
+		keywords: ["stimulus", "unemployment", "congress", "coronavirus"],
 		source: "Fox News",
 		url: "http://www.foxnews.com",
 		db_author: "Joe Mann",
@@ -10,7 +10,7 @@ const articles = [
 	},
     	{
 		caption: "Georgia\'s hardest-hit hospital says its intensive care units are filled with \'critically ill\' coronavirus patients",
-		keywords: {"stimulus", "unemployment", "congress", "coronavirus"},
+		keywords: ["stimulus", "unemployment", "congress", "coronavirus"],
 		source: "CNN",
 		url: "http://www.cnn.com",
 		db_author: "Amy Bloggs",
@@ -19,7 +19,7 @@ const articles = [
 	},
     	{
 		caption: "Ethiopia pardons more than 4,000 prisoners to help prevent coronavirus spread",
-		keywords: {"stimulus", "unemployment", "congress", "coronavirus"},
+		keywords: ["stimulus", "unemployment", "congress", "coronavirus"],
 		source: "Fox News",
 		url: "http://www.foxnews.com",
 		db_author: "Joe Mann",
@@ -28,7 +28,7 @@ const articles = [
 	},	
     	{
 		caption: "He tweeted about his symptoms and coronavirus diagnosis problems. His husband says he was then put on a ventilator",
-		keywords: {"stimulus", "unemployment", "congress", "coronavirus"},
+		keywords: ["stimulus", "unemployment", "congress", "coronavirus"],
 		source: "CNN",
 		url: "http://www.foxnews.com",
 		db_author: "Joe Mann",
@@ -37,7 +37,7 @@ const articles = [
 	},
     	{
 		caption: "Brazil's Bolsonaro calls preventive coronavirus measures \'hysteria\'",
-		keywords: {"stimulus", "unemployment", "congress", "coronavirus"},
+		keywords: ["stimulus", "unemployment", "congress", "coronavirus"],
 		source: "Fox News",
 		url: "http://www.foxnews.com",
 		db_author: "Amy Bloggs",
@@ -46,7 +46,7 @@ const articles = [
 	},
     	{
 		caption: "Warnings over harm to Israel's \'democratic system\' amid coronavirus crisis",
-		keywords: {"stimulus", "unemployment", "congress", "coronavirus"},
+		keywords: ["stimulus", "unemployment", "congress", "coronavirus"],
 		source: "Newsweek",
 		url: "http://www.foxnews.com",
 		db_author: "Amy Bloggs",
@@ -55,7 +55,7 @@ const articles = [
 	},	
 	{
 		caption: "Protesters gathered outside the Knesset Thursday",
-		keywords: {"stimulus", "unemployment", "congress", "coronavirus"},
+		keywords: ["stimulus", "unemployment", "congress", "coronavirus"],
 		source: "The Voxx",
 		url: "https://www.washingtonpost.com/",
 		db_author: "Amy Bloggs",
