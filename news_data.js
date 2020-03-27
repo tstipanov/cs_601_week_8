@@ -75,9 +75,6 @@ function findArticlesByAuthor(author) {
 function findArticlesByKeyword(keyword) {
     let results = [];
     if (keyword === null) {
-
-        }
-	    
         return results;
     }
     articles.forEach(article => {
