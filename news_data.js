@@ -64,57 +64,32 @@ const articles = [
     }
 ];
 
-function findByPhone(targetPhone) {
-    let results = [];
-
-    if (targetPhone === null) {
-        return results;
-    }
-
-    employees.forEach(employee => {
-        if ( employee.contact.phones ) {
-            employee.contact.phones.forEach(phone => {
-                if ( phone.number.includes(targetPhone) ) {
-                    results.push(employee);
-                }
-            });
-        }
-    });
-
-    return results;
-}
 
 function findArticlesByAuthor(author) {
     let results = [];
-
     if (author === null) {
         return results;
     }
-
     articles.forEach(article => {
         if (article.name.last.toLowerCase().includes(author.toLowerCase())) {
             results.push(article);
         }
     });
-
     return results;
 }
 
 
 function findArticlesByKeyword(keyword) {
     let results = [];
-
     if (keyword === null) {
         return results;
     }
-
     articles.forEach(article => {
         if (article.name.last.toLowerCase().includes(keyword.toLowerCase())) {
             results.push(article);
         }
     });
-
     return results;
 }
 
-export {findByPhone, findArticlesByAuthor, findArticlesByKeyword};
+export {findArticlesByAuthor, findArticlesByKeyword};
