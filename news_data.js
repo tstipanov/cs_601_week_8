@@ -75,13 +75,8 @@ function findArticlesByAuthor(author) {
 function findArticlesByKeyword(keyword) {
     let results = [];
     if (keyword === null) {
-	var today = new Date();    
 
-    	if (article.released.getFullYear() == today.getFullYear() && article.released.getMonth() == today.getMonth() && article.released.getDate() == today.getDate()) {
-            results.push(article);
         }
-	    
-	    
 	    
         return results;
     }
@@ -97,10 +92,15 @@ function findArticlesByKeyword(keyword) {
 function findArticlesByDate(date) {
     let results = [];
     if (date === null) {
-        return results;
+	var today = new Date();    
+	var articleDate = new Date(article.released);
+    	if (articleDate.getFullYear() == today.getFullYear() && articleDate.getMonth() == today.getMonth() && articleDate.getDate() == today.getDate()) {
+            results.push(article);
+	return results;
     }
     articles.forEach(article => {
-        if (article.released.getFullYear() == date.getFullYear() && article.released.getMonth() == date.getMonth() && article.released.getDate() == date.getDate()) {
+	var articleDate = new Date(article.released);
+        if (articleDate.getFullYear() == date.getFullYear() && articleDate.getMonth() == date.getMonth() && articleDate.getDate() == date.getDate()) {
             results.push(article);
         }
     });
