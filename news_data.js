@@ -94,6 +94,7 @@ function findArticlesByDate(date) {
     }
     articles.forEach(article => {
 	var articleDate = new Date(article.released);
+    	date = new Date(date);
         if (articleDate.getFullYear() == date.getFullYear() && articleDate.getMonth() == date.getMonth() && articleDate.getDate() == date.getDate()) {
             results.push(article);
         }
