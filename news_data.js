@@ -1,4 +1,4 @@
-const employees = [
+const articles = [
     {
         name: {
             first: 'Andrew',
