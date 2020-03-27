@@ -1,66 +1,19 @@
 const articles = [
     {
-        name: {
-            first: 'Andrew',
-            last: 'Sheehan'
-        },
-        contact: {
-            phones: [
-                {
-                    type: 'cell',
-                    number: '123-455-1212'
-                },
-                {
-                    type: 'home',
-                    number: '111-222-3333'
-                }
-            ]
-        },
-        category: {
-            type: 'Manager'
-        }
-    },
-    {
-        name: {
-            first: 'Frank',
-            last: 'Sheehan'
-        },
-        contact: {
-            phones: [
-                {
-                    type: 'cell',
-                    number: '222-3333-4444'
-                },
-                {
-                    type: 'work',
-                    number: '555-666-7777'
-                }
-            ]
-        },
-        category: {
-            type: 'Architect'
-        }
-    },
-    {
-        name: {
-            first: 'Martha',
-            last: 'Stewart'
-        },
-        contact: {
-            phones: [
-                {
-                    type: 'cell',
-                    number: '123-456-7891'
-                },
-                {
-                    type: 'work',
-                    number: '999-999-9999'
-                }
-            ]
-        },
-        category: {
-            type: 'Architect'
-        }
+		caption: "Trump adopted by the Queen of Yorkshire",
+		source: "Fox News",
+		url: "http://www.foxnews.com",
+		db_author: "Joe Mann",
+		released: "2020-01-17 12:01:28 AM EST",
+		story: "This is a really interesting story.  More to follow.."
+	},
+	{
+		caption: "Dog for hire.  Solves crime and fluffy",
+		source: "The Voxx",
+		url: "https://www.washingtonpost.com/",
+		db_author: "Mary Blige",
+		released: "2019-11-17 8:21:01 PM EST",
+		story: "Makes make hope that a dog can become President.  Hell, Trump can do it..."
     }
 ];
 
@@ -71,7 +24,7 @@ function findArticlesByAuthor(author) {
         return results;
     }
     articles.forEach(article => {
-        if (article.name.last.toLowerCase().includes(author.toLowerCase())) {
+        if (article.db_author.toLowerCase().includes(author.toLowerCase())) {
             results.push(article);
         }
     });
