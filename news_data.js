@@ -59,7 +59,7 @@ const articles = [
 		source: "The Voxx",
 		url: "https://www.washingtonpost.com/",
 		db_author: "Amy Bloggs",
-		released: "2019-03-29 EST",
+		released: "2020-03-29 EST",
 		story: "Hundreds of protesters, waving flags and banners from their cars, drove from Tel Aviv to Jerusalem Thursday to rally against Edelstein\'s move. Police attempted to stop the convoy as it drove along the highway, claiming they were driving slowly and causing violations. After a temporary delay, protesters succeeded in making it past the police roadblock to eventually gather outside the High Court and the Knesset. Along with Israeli flags, they waved black flags to symbolize the death of democracy. One person held a banner bearing the words in English, \"Crime Minister.\" Critics have accused Edelstein of acting in defiance of the public will. They point to the timing of a tweet he made on Sunday, just moments after President Rivlin tasked Gantz with trying to form a new government...."
     	},
 	{
@@ -122,7 +122,7 @@ const articles = [
 		source: "The Voxx",
 		url: "https://www.washingtonpost.com/",
 		db_author: "Associated Press",
-		released: "2019-04-03 EST",
+		released: "2020-04-03 EST",
 		story: "Hundreds of protesters, waving flags and banners from their cars, drove from Tel Aviv to Jerusalem Thursday to rally against Edelstein\'s move. Police attempted to stop the convoy as it drove along the highway, claiming they were driving slowly and causing violations. After a temporary delay, protesters succeeded in making it past the police roadblock to eventually gather outside the High Court and the Knesset. Along with Israeli flags, they waved black flags to symbolize the death of democracy. One person held a banner bearing the words in English, \"Crime Minister.\" Critics have accused Edelstein of acting in defiance of the public will. They point to the timing of a tweet he made on Sunday, just moments after President Rivlin tasked Gantz with trying to form a new government...."
     	}
 ];
