@@ -79,7 +79,8 @@ function findArticlesByKeyword(keyword) {
     }
     articles.forEach(article => {
         if (article.name.last.toLowerCase().includes(keyword.toLowerCase())) {
-            results.push(article);
+            //results.push(article);
+		return results; // temporary
         }
     });
     return results;
