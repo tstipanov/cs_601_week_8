@@ -1,4 +1,4 @@
-const articles = [
+const addresses = [
     {
       street_number: 22,
       street: "Crescent Street",
@@ -22,8 +22,8 @@ const articles = [
 
 function findInformation() {
     let results = [];
-    articles.forEach(article => {
-         results.push(article);
+    addresses.forEach(address => {
+         results.push(address);
         
     });
     return results;
